@@ -14,7 +14,7 @@
       color: #333;
     }
     header {
-      background: #0057b8;
+      background: linear-gradient(90deg, #0057b8, #0073e6);
       color: white;
       padding: 2rem;
       text-align: center;
@@ -34,6 +34,12 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       margin-bottom: 2rem;
       padding: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .service img {
+      width: 60px;
+      margin-right: 1rem;
     }
     .price {
       font-weight: 600;
@@ -53,62 +59,82 @@
     .cta-button:hover {
       background-color: #003f8a;
     }
+    .testimonial {
+      background: #e9f0f9;
+      padding: 2rem;
+      border-left: 5px solid #0057b8;
+      margin-top: 2rem;
+    }
+    .dashboard-preview {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .dashboard-preview img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .contact-section {
+      background: #fff;
+      padding: 2rem;
+      margin: 3rem auto 0 auto;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Power BI Üzleti Megoldások KKV-k Számára</h1>
     <p>Professzionális riportok és adatvizualizáció – gyorsan, átláthatóan</p>
+    <a href="#kapcsolat" class="cta-button">Ingyenes konzultáció</a>
   </header>
 
   <div class="container">
+    <h2>Szolgáltatásaink</h2>
+
     <div class="service">
-      <h2>Üzleti intelligencia és pénzügyi adatkezelés</h2>
-      <p>Automatizált riportok, cash flow, KPI vizualizáció Power BI-ben. Ügyvezetőknek és pénzügyi vezetőknek.</p>
-      <p class="price">120.000 Ft-tól | Időtartam: 1–2 hét</p>
-      <a href="#kapcsolat" class="cta-button">Ajánlatot kérek</a>
+      <img src="https://img.icons8.com/color/96/combo-chart.png" alt="Dashboard Icon">
+      <div>
+        <h3>KPI Dashboard Készítés</h3>
+        <p>Testreszabott Power BI dashboardok, amelyek segítenek üzleti döntéseid gyors meghozatalában.</p>
+        <p class="price">Ár: 50.000 Ft-tól</p>
+      </div>
     </div>
 
     <div class="service">
-      <h2>Fogyasztói adatok elemzése</h2>
-      <p>Vásárlói szokások, termékelemzés, ügyfélszegmentáció vizualizálva.</p>
-      <p class="price">140.000 Ft-tól | Időtartam: 1–2 hét</p>
-      <a href="#kapcsolat" class="cta-button">Ajánlatot kérek</a>
+      <img src="https://img.icons8.com/color/96/data-in-both-directions.png" alt="Data Icon">
+      <div>
+        <h3>Adatforrás Integráció</h3>
+        <p>Kapcsolat különböző adatforrásokkal (Excel, SQL, API), egyetlen átlátható riportba.</p>
+        <p class="price">Ár: 30.000 Ft-tól</p>
+      </div>
     </div>
 
     <div class="service">
-      <h2>Közösségi média és webes adatok</h2>
-      <p>Google Analytics és kampányadatok átláthatóan: konverziók, ROI, elérés vizualizációja.</p>
-      <p class="price">130.000 Ft-tól | Időtartam: 1 hét</p>
-      <a href="#kapcsolat" class="cta-button">Ajánlatot kérek</a>
+      <img src="https://img.icons8.com/color/96/automation.png" alt="Automation Icon">
+      <div>
+        <h3>Riport Automatizálás</h3>
+        <p>Riportfrissítések és automatikus e-mail küldés, időmegtakarítás céljából.</p>
+        <p class="price">Ár: 20.000 Ft-tól</p>
+      </div>
     </div>
 
-    <div class="service">
-      <h2>Helyalapú és mobil adatok</h2>
-      <p>Bolt- és logisztikai adatok térképes megjelenítése, mobilos mozgások elemzése.</p>
-      <p class="price">150.000 Ft-tól | Időtartam: 2 hét</p>
-      <a href="#kapcsolat" class="cta-button">Ajánlatot kérek</a>
+    <div class="testimonial">
+      <p>„Az együttműködés eredményeként 30%-kal gyorsabban tudjuk értelmezni havi pénzügyi adatainkat. Rendkívül profi munka!”<br><strong>– Kovács Anna, Ügyvezető, SmartKft</strong></p>
     </div>
 
-    <div class="service">
-      <h2>IoT és szenzor adatok</h2>
-      <p>Szenzoradatok (pl. hőmérséklet, rezgés) feldolgozása élő riportokban.</p>
-      <p class="price">160.000 Ft-tól | Időtartam: 2–3 hét</p>
-      <a href="#kapcsolat" class="cta-button">Ajánlatot kérek</a>
-    </div>
-
-    <div class="service">
-      <h2>Kormányzati és nyílt adatok</h2>
-      <p>KSH, Eurostat, NAV adatok vizualizálása döntéstámogatáshoz és piackutatáshoz.</p>
-      <p class="price">100.000 Ft-tól | Időtartam: 1–2 hét</p>
-      <a href="#kapcsolat" class="cta-button">Ajánlatot kérek</a>
-    </div>
-
-    <div class="service">
-      <h2>Műholdas és térinformatikai adatok</h2>
-      <p>Geotérképes megoldások, térhasználat, monitoring, mezőgazdasági vizualizációk.</p>
-      <p class="price">180.000 Ft-tól | Időtartam: 2–3 hét</p>
-      <a href="#kapcsolat" class="cta-button">Ajánlatot kérek</a>
+    <div class="dashboard-preview">
+      <h2>Dashboard példa</h2>
+      <img src="https://via.placeholder.com/800x400?text=Power+BI+Dashboard+Preview" alt="Dashboard Preview">
     </div>
   </div>
 
@@ -116,6 +142,6 @@
     <h2>Kapcsolatfelvétel</h2>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqcBWxao3imbzlaIof1UxzHUehR-MQsV8_bd3rbOU3ziLcIA/viewform?embedded=true" allowfullscreen></iframe>
   </div>
+
 </body>
 </html>
-
